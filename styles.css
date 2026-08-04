@@ -32,6 +32,35 @@ body {
   line-height: 1.65;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-text {
+  flex: 1 1 auto;
+}
+
+.portrait {
+  flex-shrink: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+
+@media (max-width: 480px) {
+  header {
+    gap: 1rem;
+  }
+  .portrait {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
 h1 {
   margin: 0 0 0.35rem;
   font-size: 1.9rem;
